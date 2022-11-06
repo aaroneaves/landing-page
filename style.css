@@ -1,151 +1,161 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0px;
     height: 100vh;
-    margin: 0;
 }
 
-.header {
-    display: flex;
+#header,
+#landscape,
+#footer {
     background-color: #1F2937;
-    padding: 10px 300px;
-    column-gap: 20px;
-    align-items: center;
 }
 
-.header > div {
-    margin-right: auto;
-    font-size: 24px;
-    font-weight: bold;
-    color: #F9FaF8;
+#quote {
+    background-color: #E5E7EB;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 40px;
+    flex: none;
 }
 
 a {
+    color: white;
     text-decoration: none;
-    font-size: 18px;
-    color: #E5E7EB;
 }
 
-.hero {
+#logo {
+    height: 32px;
+    width: auto;
+    margin-left: 300px;
+}
+
+#header-right {
+    margin-right: 300px;
+}
+
+#middle-link {
+    margin: 0px 20px;
+}
+
+#landscape-pic {
+    height: 200px;
+    width: 700px;
+    min-width: 700px;
+    margin-right: 300px;
+}
+
+#landscape {
     display: flex;
-    padding: 75px 300px;
-    background-color: #1F2937;
-    column-gap: 20px;
-    /*height: 25vh;*/
-}
-
-#main-hero-text {
-    color: #F9FAF8;
-    font-size: 48px;
-    font-weight: bolder;
-}
-
-#secondary-hero-text {
-    font-size: 18px;
-    color: #E5E7EB;
-    padding: 25px 0 25px;
-}
-
-.hero-right > img {
-    width: 850px;
-    height: 225px;
-    border-radius: 8px;
-    /*flex: 1;*/
-}
-
-button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    border-radius: 5px;
-    padding: 8px 20px;
-}
-
-#bold-text {
-    font-size: 36px;
-    font-weight: bolder;
-    color: #1F2937;
-    padding: 20px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px 0;
-}
-
-#image-container-big {
-    display: flex;
-    column-gap: 40px;
-}
-
-.image-container-small {
-    width: 150px;
-    text-align: center;
-}
-
-.blue-box{
-    height: 150px;
-    width: 150px;
-    border: 4px solid #3882F6;
-    border-radius: 6px;
-}
-
-.quote {
-    background-color: #E5E7EB;
-    font-size: 36px;
-    color:#1F2937;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 5px;
-}
-
-.quote > div {
-    width: 500px;
-
-}
-
-.god-of-thunder {
-    text-align: right;
-    font-weight: bold;
-}
-
-.call-to-action {
-    display: flex;
-    background-color: #3882F6;
-    width: 450px;
-    margin: 30px auto 30px;
-    padding: 20px 80px;
+    color: white;
     justify-content: space-between;
-    border-radius: 4px;
+    padding-bottom: 20px;
 }
 
-.call-to-action > div {
-    color:#F9FAF8;
+#join {
+    background-color: #3882F6;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 
-.footer {
-    background-color: #1F2937;
+#landscape-left {
+    margin-left: 300px;
+    width: 480px;
+}
+
+#landscape-left > h1 {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.center {
     text-align: center;
-    color: #F9FAF8;
+    font-size: 40px;
+}
+
+#party {
+    padding: 20px;
+    margin: 0px;
+    flex: auto;
+}
+
+.party-pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#party-container {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    min-width: 700px;
+}
+
+#party-container > div {
+    text-align: center;
+    font-weight: 600;
+}
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    padding: 20px;
+    flex: none;
+}
+
+#quote > div {
+    width: 600px;
+    text-align: center;
+}
+
+#quote1 {
+    font-style: italic;
+    align-self: center;
+}
+
+#quote2 {
+    font-weight: 600;
+    text-align: right;
+    align-self: center;
+}
+
+#call-container {
+    background-color: #3882F6;
+    border-radius: 5px;
+    display: flex;
+    padding: 15px 50px; 
+}
+
+#call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
     padding: 20px;
 }
 
-.header > img {
-    width: 64px;
-    height: auto;
-    margin-right: auto;
+#call-container-left {
+    margin-right: 40px;
 }
 
-.image-container-small > img {
-    width: 150px;
-    height: 150px;
-    border-radius: 8px;
+#call-container > button {
+    background-color: #3882F6;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 
-.image-container-small > div {
-    font-weight: bold;
-}
+#footer {
+    color:white;
+    text-align: center;
+    padding: 10px 0px;
+    flex: none;
 
+}

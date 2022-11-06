@@ -2,71 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron's Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <div class="header">
-        <img src="./logo.png" alt="DnD apersand">
-        <a href="#">Act I</a>
-        <a href="#">Act II</a>
-        <a href="#">Act III</a>
+    <div id="header">
+        <img src="./img/logo.png" alt="A dope logo!" id="logo">
+        <div id="header-right">
+            <a href="#">Act I</a>
+            <a href="#" id="middle-link">Act II</a>
+            <a href="#">Act III</a>
+        </div>   
     </div>
 
-    <div class="hero">
-        <div class="hero-left">
-            <div id="main-hero-text">The Archetypal Party</div>
-            <div id="secondary-hero-text">Sure, you could be creative, avant-garde even! But why do that when you could be <em>archetypal</em>...</div>
-            <button>Join the Party!</button>
+    <div id="landscape" class="flex-item">      
+        <div id="landscape-left">
+            <h1>The Archetypal Adventuring Party</h1>
+            <p>Sure, you could be creative, avant-garde even!<br>But why do that when you could be <em>archetypal</em>...</p>
+            <button id="join">Join the Party!</button>
         </div>
-        
-        <div class="hero-right">
-            <img src="./fantasy-landscape.jpg" alt="A very dope game, tbf">
-        </div>
+        <img id="landscape-pic" src="./img/fantasy-landscape.jpg" alt="A fantasy landscape!">
     </div>
 
-    <div class="content">
-        <div id="bold-text">The Party</div>
-        <div id="image-container-big">
-            <div class="image-container-small">
-                <img src="./fighter.jpg" alt="A very dope game, tbf">
+    <div id="party">   
+        <h1 class="center">The Party</h1>  
+        <div id="party-container">
+            <div>
+                <img src="./img/fighter.jpg" alt="A strong fighter!" class="party-pic">
                 <div>Fighter</div>
             </div>
-            <div class="image-container-small">
-                <img src="./cleric.jpg" alt="A very dope game, tbf">
+            <div>
+                <img src="./img/cleric.jpg" alt="A wise cleric!" class="party-pic">
                 <div>Cleric</div>
-            </div> 
-            <div class="image-container-small">
-                <img src="./rogue.jpg" alt="A very dope game, tbf">
+            </div>
+            <div>
+                <img src="./img/rogue.jpg" alt="A cunning rogue!" class="party-pic">
                 <div>Rogue</div>
-            </div> 
-            <div class="image-container-small">
-                <img src="./wizard.jpg" alt="A very dope game, tbf">
-                <div>Wizard</div>
+            </div>
+            <div>
+                <img src="./img/wizard.jpg" alt="An mysterious wizard!" class="party-pic">
+                <div>Wizard</div>    
             </div>
         </div>
     </div>
-    
-    <div class="quote">
-        <div><em>All of the most powerful ideas in history go back to archetypes.</em></div>
-        <div class="god-of-thunder">-Carl Jung</div>
+
+    <div id="quote" class="flex-item">   
+        <div id="quote1">All of the most powerful ideas in history go back to archetypes.</div>
+        <div id="quote2">-Carl Jung</div>
     </div>
 
-    <div class="call-to-action">
-        <div>
-            <div><strong>Don't think about it! Just do it!</strong></div>
-            <div>Roll 3d6 and begin your adventure!</div>
+    <div id="call-to-action" class="flex-item">  
+        <div id="call-container">
+            <div id="call-container-left">
+                <div><b>Don't think about it! Just do it!</b></div>
+                <div>Roll 3d6 and begin your adventure!</div>
+            </div>
+            <button>Join the Party!</button>
         </div>
-        <button>Join the Party!</button>
     </div>
 
-    <div class="footer">
-        <div>Copyright © Jung at Heart 2022</div>
-    </div>
+    <div id="footer" class="flex-item">Copyright &copy Jung at Heart</div>
 
 
+
+    <script src="script.js" defer></script>
 </body>
+
 </html>
